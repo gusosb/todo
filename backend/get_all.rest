@@ -1,0 +1,6 @@
+post http://localhost:3004/api/todos
+Content-Type: application/json
+
+{
+    "description": "VSCode test"
+}
