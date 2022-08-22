@@ -5,7 +5,9 @@ Simple todo-app, add todos with the New todo box, to change important status of 
 https://todo.kanindev.se/
 
 
-Using axios package to fetch todods from backend, setting todos to the useState hook todods.
+Using axios package to fetch todods from backend, setting todos to the useState hook todos.
+
+/frontend/src/App.js
 
 ```JavaScript
 const [todos, setTodos] = useState()
