@@ -22,3 +22,16 @@ const getTodos = () => {
   })
 }
 ```
+
+When double clicking List item 
+
+/frontend/src/App.js
+
+```JavaScript
+<ListItemText
+  primary={e.description}
+  sx={{ color: e.isImportant && 'red' }}
+  onDoubleClick={() => changeImportant(e)}
+   secondary={e.isImportant && 'important!'}
+/>
+```
