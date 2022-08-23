@@ -23,11 +23,21 @@ const getTodos = () => {
 }
 ```
 
-When double clicking List item 
+When double clicking List item changeImportant call is made.
 
 /frontend/src/App.js
 
 ```JavaScript
+
+const changeImportant = async (e) => {
+  await axios
+  .patch(`${baseURL}`, e)
+  .then(async response => {
+    console.log(response)
+  })
+  getTodos()
+}
+
 <ListItemText
   primary={e.description}
   sx={{ color: e.isImportant && 'red' }}
